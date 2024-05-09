@@ -1,38 +1,7 @@
 import streamlit as st
-import base64
+import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
-
-#########################################################
-file_ = open("Images/1. MathsIsFun.png", "rb")
-contents = file_.read()
-data_url_1 = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-file_ = open("Images/2. 3blue1brown.png", "rb")
-contents = file_.read()
-data_url_2 = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-file_ = open("Images/3. Probability and statistics .png", "rb")
-contents = file_.read()
-data_url_3 = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-file_ = open("Images/4. NPTEL.png", "rb")
-contents = file_.read()
-data_url_4 = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-file_ = open("Images/5. Great Learning.png", "rb")
-contents = file_.read()
-data_url_5 = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-file_ = open("Images/6. OpenCV.png", "rb")
-contents = file_.read()
-data_url_6 = base64.b64encode(contents).decode("utf-8")
-file_.close()
 
 #
 # #######################################################
@@ -40,7 +9,7 @@ file_.close()
 col_start, col1, col2, col3, col4, col_end = st.columns([3,1,1,1,1,3])
 
 with col1:
-   st.page_link("my_portfolio_3.py", label="Home")
+   st.page_link("my_portfolio.py", label="Home")
 with col2:
    st.page_link("pages/page_1.py", label="Blog")
 with col3:
@@ -61,8 +30,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 ###########################################
-
-import streamlit.components.v1 as components
 
 components.html(
     """
@@ -148,6 +115,10 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
+    <script>
+        const sidebar = document.getElementsByClassName("sidebar-container")[0];
+        sidebar.style.display = "none";
+    </script>
 
 <h2 style="text-align: center; color: rgb(81, 0, 12)">Journey to Computer Vision</h2>
 
@@ -155,37 +126,37 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="data:image/png;base64,""" + data_url_1 + """ " style="width:100%">
+  <img src="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" style="width:100%">
   <div class="blacktext">Is maths really a fun... umm... </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
-  <img src="data:image/png;base64,""" + data_url_2 + """ " style="width:100%; border: 1px solid rgb(200,200,200);">
+  <img src="https://i.ibb.co/D7435W7/2-3blue1brown.png" style="width:100%; border: 1px solid rgb(200,200,200);">
   <div class="blacktext">Amazing...</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 6</div>
-  <img src="data:image/png;base64,""" + data_url_3 + """ " style="width:100%">
+  <img src="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" style="width:100%">
   <div class="blacktext">?????</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 6</div>
-  <img src="data:image/png;base64,""" + data_url_4 + """ " style="width:100%; border: 1px solid rgb(200,200,200);">
+  <img src="https://i.ibb.co/0j2mc7K/4-NPTEL.png" style="width:100%; border: 1px solid rgb(200,200,200);">
   <div class="blacktext">Yuhoo... I did it !!</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
-  <img src="data:image/png;base64,""" + data_url_5 + """ " style="width:100%; border: 1px solid rgb(200,200,200);">
+  <img src="https://i.ibb.co/qNLPZRW/5-Great-Learning.png" style="width:100%; border: 1px solid rgb(200,200,200);">
   <div class="blacktext">Keep learning... </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 6</div>
-  <img src="data:image/png;base64,""" + data_url_6 + """ " style="width:100%">
+  <img src="https://i.ibb.co/sHfXSCb/6-Open-CV.png" style="width:100%">
   <div class="blacktext">I am loving it... </div>
 </div>
 
@@ -229,7 +200,6 @@ function showSlides() {
     """,
     height=600,
 )
-
 
 ####################################################
 
