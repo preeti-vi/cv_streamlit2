@@ -1,8 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(layout="wide")
-
+st.set_page_config(layout="wide",
+                   initial_sidebar_state="collapsed")
 #
 # #######################################################
 #
@@ -19,16 +19,6 @@ with col4:
 
 st.divider()
 
-# Add a script to the HTML header to close the sidebar by default
-st.markdown(
-    """
-    <script>
-        const sidebar = document.getElementsByClassName("sidebar-container")[0];
-        sidebar.style.display = "none";
-    </script>
-    """,
-    unsafe_allow_html=True
-)
 ###########################################
 
 components.html(
@@ -120,7 +110,9 @@ img {vertical-align: middle;}
         sidebar.style.display = "none";
     </script>
 
-<h2 style="text-align: center; color: rgb(81, 0, 12)">Journey to Computer Vision</h2>
+    <div style="color: rgb(81, 0, 12); font-size: 30px; font-family: 'Book Antiqua'; text-align: center; padding-bottom: 20px;">
+        Journey to Computer Vision
+    </div>
 
 <div class="slideshow-container">
 
