@@ -117,38 +117,50 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" style="width:100%">
+  <div class="numbertext">1 / 6</div>
+  <a href="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" target="_blank">
+    <img src="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" style="width:100%">
+  </a>
   <div class="blacktext">Is maths really a fun... umm... </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
-  <img src="https://i.ibb.co/D7435W7/2-3blue1brown.png" style="width:100%; border: 1px solid rgb(200,200,200);">
-  <div class="blacktext">Amazing...</div>
+  <a href="https://i.ibb.co/D7435W7/2-3blue1brown.png" target="_blank">
+    <img src="https://i.ibb.co/D7435W7/2-3blue1brown.png" style="width:100%; border: 1px solid rgb(200,200,200);">
+  </a>  
+  <div class="blacktext">Eigenvalues... eigenvectors... </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 6</div>
-  <img src="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" style="width:100%">
+  <a href="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" target="_blank">
+    <img src="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" style="width:100%">
+  </a>  
   <div class="blacktext">?????</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 6</div>
-  <img src="https://i.ibb.co/0j2mc7K/4-NPTEL.png" style="width:100%; border: 1px solid rgb(200,200,200);">
+  <a href="https://i.ibb.co/0j2mc7K/4-NPTEL.png" target="_blank">
+    <img src="https://i.ibb.co/0j2mc7K/4-NPTEL.png" style="width:100%; border: 1px solid rgb(200,200,200);">
+  </a>
   <div class="blacktext">Yuhoo... I did it !!</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
-  <img src="https://i.ibb.co/qNLPZRW/5-Great-Learning.png" style="width:100%; border: 1px solid rgb(200,200,200);">
+  <a href="https://i.ibb.co/qNLPZRW/5-Great-Learning.png" target="_blank">
+    <img src="https://i.ibb.co/qNLPZRW/5-Great-Learning.png" style="width:100%; border: 1px solid rgb(200,200,200);">
+  </a>  
   <div class="blacktext">Keep learning... </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 6</div>
-  <img src="https://i.ibb.co/sHfXSCb/6-Open-CV.png" style="width:100%">
+  <a href="https://i.ibb.co/sHfXSCb/6-Open-CV.png" target="_blank">
+    <img src="https://i.ibb.co/sHfXSCb/6-Open-CV.png" style="width:100%">
+  </a>
   <div class="blacktext">I am loving it... </div>
 </div>
 
