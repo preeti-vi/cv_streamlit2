@@ -1,10 +1,11 @@
 import streamlit as st
-import streamlit.components.v1 as components
 from top import *
+from project_templates import *
+
 
 getTopSection(st)
 
-####################################################
+addPytorchSection(st)
 
-st.header('PyTorch 2.x')
-st.divider()
+addPytorchSection(st)
+
