@@ -1,12 +1,19 @@
 import streamlit.components.v1 as components
+from streamlit_theme import st_theme
 
+tcolor = None
 
-def getTopSection(st):
+def app_init(st):
     st.set_page_config(layout="wide",
                        initial_sidebar_state="collapsed")
-    #
-    # #######################################################
-    #
+
+    theme = st_theme()["base"]  # either 'light' or 'dark'
+    global tcolor
+    tcolor = "rgb(81, 0, 12)" if theme == "light" else "rgb(255, 255, 255)"
+
+    return tcolor
+
+def getTopSection(st):
     col_start, col1, col2, col3, col4, col_end = st.columns([3, 1, 1, 1, 1, 3])
 
     with col1:
@@ -111,7 +118,7 @@ def getTopSection(st):
             sidebar.style.display = "none";
         </script>
 
-        <div style="color: rgb(81, 0, 12); font-size: 30px; font-family: 'Book Antiqua'; text-align: center; padding-bottom: 20px;">
+        <div style="color: """ + tcolor + """; font-size: 30px; font-family: 'Book Antiqua'; text-align: center; padding-bottom: 20px;">
             Journey to Computer Vision
         </div>
 

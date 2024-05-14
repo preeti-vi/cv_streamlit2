@@ -1,5 +1,9 @@
 import streamlit.components.v1 as components
 
+tcolor = None
+def set_themecolor(in_tcolor):
+    global tcolor
+    tcolor = in_tcolor
 
 def proj_template(st, project_details):
     # st.image(project_details["img"])
@@ -7,10 +11,10 @@ def proj_template(st, project_details):
         '<html><body>' +
         '<a href="' + project_details["link"] + '" target="_blank", style="text-decoration: none;">' +
         '<img src="' + project_details["img"] + '" style="width:250px;">' +
-        '<div style="color: rgb(81, 0, 12); font-size: 17px; font-family: \'Book Antiqua\';">' +
+        f'<div style="color: {tcolor}; font-size: 18px; font-family: \'Book Antiqua\';">' +
         project_details["title"] +
         '</div>' +
-        '<div style="margin-top: 15px; color: rgb(81, 0, 12); font-size: 12px; font-family: \'Book Antiqua\';">' +
+        f'<div style="margin-top: 15px; color: {tcolor}; font-size: 14px; font-family: \'Book Antiqua\';">' +
         project_details["desc"] +
         '</div></a></body></html>',
         height=250
