@@ -39,10 +39,10 @@ def proj_section(st, section_header, proj_details):
 
 def addPytorchSection(st):
     proj_details = []
-    proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
+    proj_details.append({"img": "https://i.ibb.co/WkCp6M1/LRSchedulers.png",
                          "title": "Template - LR Schedulers",
                          "desc": "Demonstrates use of various LR Schedulers used in PyTorch",
-                         "link": "https://i.ibb.co/D7435W7/2-3blue1brown.png"
+                         "link": "https://preeti-vi.github.io/pages/PyTorch/LR%20Schedulers.html"
                          })
     proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
                          "title": "Template - LR Schedulers",
