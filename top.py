@@ -1,15 +1,16 @@
 import streamlit.components.v1 as components
 from streamlit_theme import st_theme
 
-tcolor = None
+tcolor = "rgb(81, 0, 12)"
 
 def app_init(st):
     st.set_page_config(layout="wide",
                        initial_sidebar_state="collapsed")
 
-    theme = st_theme()["base"]  # either 'light' or 'dark'
+    theme = st_theme()  # either 'light' or 'dark'
     global tcolor
-    tcolor = "rgb(81, 0, 12)" if theme == "light" else "rgb(255, 255, 255)"
+    if (theme):
+        tcolor = "rgb(81, 0, 12)" if theme["base"] == "light" else "rgb(255, 255, 255)"
 
     return tcolor
 
