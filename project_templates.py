@@ -44,10 +44,10 @@ def addPytorchSection(st):
                          "desc": "Demonstrates use of various LR Schedulers used in PyTorch",
                          "link": "https://preeti-vi.github.io/pages/PyTorch/LR%20Schedulers.html"
                          })
-    proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
-                         "title": "Template - LR Schedulers",
-                         "desc": "Demonstrates use of various LR Schedulers used in PyTorch",
-                         "link": "https://i.ibb.co/D7435W7/2-3blue1brown.png"
+    proj_details.append({"img": "https://i.ibb.co/vXjj5VY/Optimizers.jpg",
+                         "title": "Template - Optimizers",
+                         "desc": "Demonstrates use of various optimizers available in PyTorch",
+                         "link": "https://preeti-vi.github.io/pages//PyTorch/Optimizers.html"
                          })
     proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
                          "title": "Template - LR Schedulers",
