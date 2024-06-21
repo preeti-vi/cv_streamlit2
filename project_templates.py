@@ -47,12 +47,12 @@ def addPytorchSection(st):
     proj_details.append({"img": "https://i.ibb.co/vXjj5VY/Optimizers.jpg",
                          "title": "Template - Optimizers",
                          "desc": "Demonstrates use of various optimizers available in PyTorch",
-                         "link": "https://preeti-vi.github.io/pages//PyTorch/Optimizers.html"
+                         "link": "https://preeti-vi.github.io/pages/PyTorch/Optimizers.html"
                          })
-    proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
-                         "title": "Template - LR Schedulers",
-                         "desc": "Demonstrates use of various LR Schedulers used in PyTorch",
-                         "link": "https://i.ibb.co/D7435W7/2-3blue1brown.png"
+    proj_details.append({"img": "https://i.ibb.co/NS9CP0Z/bricks.jpg",
+                         "title": "Kaggle Competition - Image Classification",
+                         "desc": "Training from scratch (81.16% accuracy)",
+                         "link": "https://preeti-vi.github.io/pages/PyTorch/kaggle-classification - training-from-scratch.html"
                          })
     proj_details.append({"img": "https://i.ibb.co/D7435W7/2-3blue1brown.png",
                          "title": "Template - LR Schedulers",
