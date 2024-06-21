@@ -10,14 +10,14 @@ def proj_template(st, project_details):
     components.html(
         '<html><body>' +
         '<a href="' + project_details["link"] + '" target="_blank", style="text-decoration: none;">' +
-        '<img src="' + project_details["img"] + '" style="width:250px;">' +
+        '<img src="' + project_details["img"] + '" style="width:250px;height:150px;">' +
         f'<div style="color: {tcolor}; font-size: 18px; font-family: \'Book Antiqua\';">' +
         project_details["title"] +
         '</div>' +
         f'<div style="margin-top: 15px; color: {tcolor}; font-size: 14px; font-family: \'Book Antiqua\';">' +
         project_details["desc"] +
         '</div></a></body></html>',
-        height=250
+        height=260
     )
 
 def proj_section(st, section_header, proj_details):
