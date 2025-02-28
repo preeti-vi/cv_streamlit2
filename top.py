@@ -15,17 +15,16 @@ def app_init(st):
     return tcolor
 
 def getTopSection(st):
-    col_start, col1, col2, col3, col4, col_end = st.columns([3, 1, 1, 1, 1, 3])
+    col_start, col1, col2, col3, col_end = st.columns([3.5, 1, 1, 1, 3.5])
 
     with col1:
         st.page_link("my_portfolio.py", label="Home")
     with col2:
-        st.page_link("pages/page_1.py", label="Blog")
+        # st.page_link("pages/page_1.py", label="Blog")
+        st.write("Blog")
     with col3:
-        st.page_link("pages/page_2.py", label="Projects")
-    with col4:
-        st.page_link("http://www.google.com", label="Google")
-
+        # st.page_link("pages/page_2.py", label="Projects")
+        st.write("Projects")
     st.divider()
 
     ###########################################
@@ -120,7 +119,7 @@ def getTopSection(st):
         </script>
 
         <div style="color: """ + tcolor + """; font-size: 30px; font-family: 'Book Antiqua'; text-align: center; padding-bottom: 20px;">
-            Journey to Computer Vision
+            Journey to the World of AI
         </div>
 
     <div class="slideshow-container">
@@ -170,7 +169,7 @@ def getTopSection(st):
       <a href="https://i.ibb.co/sHfXSCb/6-Open-CV.png" target="_blank">
         <img src="https://i.ibb.co/sHfXSCb/6-Open-CV.png" style="width:100%">
       </a>
-      <div class="blacktext">I am loving it... </div>
+      <div class="blacktext">World of computer vision... </div>
     </div>
 
     </div>

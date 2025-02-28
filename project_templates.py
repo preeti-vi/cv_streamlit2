@@ -26,15 +26,32 @@ def proj_section(st, section_header, proj_details):
     col1, _, col2, _, col3, _, col4 = st.columns([10, 1, 10, 1, 10, 1, 10])
 
     with col1:
-        proj_template(st, proj_details[0])
+        if len(proj_details) > 0:
+            proj_template(st, proj_details[0])
     with col2:
-        proj_template(st, proj_details[1])
+        if len(proj_details) > 1:
+            proj_template(st, proj_details[1])
     with col3:
-        proj_template(st, proj_details[2])
+        if len(proj_details) > 2:
+            proj_template(st, proj_details[2])
     with col4:
-        proj_template(st, proj_details[3])
+        if len(proj_details) > 3:
+            proj_template(st, proj_details[3])
 
-    components.html("<a href='https://i.ibb.co/D7435W7/2-3blue1brown.png' target='_blank'> View All </a>")
+    st.markdown("**View All**")
+    # components.html("<a href='#' target='_blank'> View All </a>")
+
+
+def addProjectsSection(st):
+    proj_details = []
+    proj_details.append({"img": "https://i.ibb.co/20rGTd32/ai-assist.png",
+                         "title": "AI-powered personal assistant",
+                         "desc": "A RAG model using Langchain and Google Gemini, OpenAI Embeddings model",
+                         "link": "https://ai-cv-assist.streamlit.app/"
+                         })
+
+    proj_section(st, "Projects", proj_details)
+
 
 
 def addPytorchSection(st):

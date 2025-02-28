@@ -9,7 +9,7 @@ getTopSection(st)
 
 set_themecolor(tcolor)
 
-addPytorchSection(st)
+addProjectsSection(st)
 
 addPytorchSection(st)
 
