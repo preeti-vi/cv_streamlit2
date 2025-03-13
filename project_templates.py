@@ -50,6 +50,12 @@ def addProjectsSection(st):
                          "link": "https://ai-cv-assist.streamlit.app/"
                          })
 
+    proj_details.append({"img": "https://i.ibb.co/nMwB30Jy/library-assist.jpg",
+                         "title": "AI-powered library assistant",
+                         "desc": "An agent-based app using Langchain which utilizes TavilySearch and other tools",
+                         "link": "https://library-assist.streamlit.app/"
+                         })
+
     proj_section(st, "Projects", proj_details)
 
 

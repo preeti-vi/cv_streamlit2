@@ -129,7 +129,7 @@ def getTopSection(st):
       <a href="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" target="_blank">
         <img src="https://i.ibb.co/Gcp7H1Z/1-Maths-Is-Fun.png" style="width:100%">
       </a>
-      <div class="blacktext">Is maths really a fun... umm... </div>
+      <div class="blacktext">Is maths really a fun...</div>
     </div>
 
     <div class="mySlides fade">
@@ -145,7 +145,7 @@ def getTopSection(st):
       <a href="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" target="_blank">
         <img src="https://i.ibb.co/7yjp7Cc/3-Probability-and-statistics.png" style="width:100%">
       </a>  
-      <div class="blacktext">?????</div>
+      <div class="blacktext">???</div>
     </div>
 
     <div class="mySlides fade">
